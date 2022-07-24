@@ -10,13 +10,18 @@
 
 		<!-- Link the CSS -->
 		<link rel="stylesheet" href="./styles/style.css">
+
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 
 	<body>
 		<!-- Header Section Start -->
-		<header id="header">
+		<header id="header" class="mb-3">
 			<!-- Navbar Section Start -->
-			<nav class="navbar navbar-expand-md bg-light">
+			<nav class="navbar navbar-expand-md bg-light fixed-top">
 				<!-- navbar Container Start -->
 				<div class="container container-fluid">
 					<!-- Website Brand Start -->
@@ -53,7 +58,59 @@
 			<!-- Navbar Section End -->
 		</header>
 		<!-- Header Section End -->
-		<h1>Hello, world!</h1>
+
+		<!-- Main Section Start -->
+		<main class="pt-2 container">
+			<section class="position-relative image--slider container ">
+				<div id="carouselExampleCaptions" class="carousel slide position-absolute pt-5" data-bs-ride="carousel" data-bs-interval="3000">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./media/images/wedding.jpg" class="d-block img-fluid h-auto rounded-3" alt="Wedding">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="fw-bolder fs-1">The Perfect venue for your next event</h5>
+								<p class="fs-4">Some representative placeholder content for the first slide.</p>
+								<button class="btn btn-primary px-4">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./media/images/wedding-2.jpg" class="d-block img-fluid h-auto rounded-3" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="fw-bolder fs-1">The Perfect venue for your next event</h5>
+								<p class="fs-4">Some representative placeholder content for the second slide.</p>
+								<button class="btn btn-primary px-4">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./media/images/wedding-3.jpg" class="d-block img-fluid h-auto rounded-3" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="fw-bolder fs-1">The Perfect venue for your next event</h5>
+								<p class="fs-4">Some representative placeholder content for the third slide.</p>
+								<button class="btn btn-primary px-4">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+		</main>
+		<!-- main Section End -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
 		</script>
