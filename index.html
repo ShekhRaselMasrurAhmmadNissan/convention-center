@@ -18,32 +18,43 @@
 		<!-- Header Section Start -->
 		<header id="header" class="header">
 			<!-- Navbar Start -->
-			<nav class="navbar navbar-expand-sm navbar-light bg-light ">
-				<div class="container-fluid container">
-					<!-- Website Icon Start -->
-					<a class="navbar-brand" href="#">Abacus Convention Center</a>
-					<!-- Website Icon End -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-						aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar navbar-expand-md bg-light shadow fixed-top p-4">
+				<div class="container container-fluid">
+					<a class="navbar-brand w-50" href="#">
+						<img class="img-fluid" src="./media/images/Logo.svg" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarID">
-						<div class="navbar-nav">
-							<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-							<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About us</a>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+						<!-- <nav class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+						<nav class="navbar-nav">
+							<li class="nav-item fs-5 fw-bold ms-3">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
 							</li>
-							<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a>
+							<li class="nav-item fs-5 fw-bold ms-3">
+								<a class="nav-link" href="#">About us</a>
 							</li>
-							<li class="nav-item"><a class="nav-link active btn btn--subscribe" aria-current="page" href="#">Subscribe</a>
+							<li class="nav-item fs-5 fw-bold ms-3">
+								<a class="nav-link" href="#">Contact</a>
 							</li>
-						</div>
+							<li class="nav-item fs-5 fw-bold ms-3">
+								<a class="nav-link btn rounded-pill btn--subscribe" href="#">Subscribe</a>
+							</li>
+						</nav>
+						<!-- <form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form> -->
 					</div>
 				</div>
 			</nav>
 			<!-- Navbar End -->
 
 			<!-- Image Slider Start -->
-			<div class="container">
+			<div class="container carousel-slider">
 				<div id="image-slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#image-slider" data-bs-slide-to="0" class="active"
@@ -79,13 +90,13 @@
 							</div>
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button"
-						data-bs-target="#image-slider" data-bs-slide="prev">
+					<button class="carousel-control-prev" type="button" data-bs-target="#image-slider"
+						data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Previous</span>
 					</button>
-					<button class="carousel-control-next" type="button"
-						data-bs-target="#image-slider" data-bs-slide="next">
+					<button class="carousel-control-next" type="button" data-bs-target="#image-slider"
+						data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
@@ -95,6 +106,144 @@
 		</header>
 		<!-- Header Section End -->
 
+		<!-- Main Section Start -->
+		<main id="main" class="main my-5">
+			<!-- Precious Section Start -->
+			<section class="precious container container-fluid">
+				<div class="container row align-items-center justify-content-center">
+					<div class="precious-image col-md-6 col-12">
+						<img class="img-fluid" src="./media/images/wedding.png" alt="">
+					</div>
+					<div class="precious-information col-md-6 col-12 position-relative">
+						<!-- Toast Start -->
+						<div class="toast-container bottom-0 end-0">
+							<div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive"
+								aria-atomic="true">
+								<div class="d-flex">
+									<div class="toast-body">
+										Hello, world! This is a toast message.
+									</div>
+									<button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+										aria-label="Close"></button>
+								</div>
+							</div>
+						</div>
+						<!-- Toast End -->
+						<h2>Every Moment is Precious</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, in dolorem soluta, ullam
+							eligendi accusamus minus numquam quae et eum, ad quod consequatur vitae at aperiam sit?
+							Tempore, dolorum a.</p>
+						<button class="btn btn-primary px-5 py-2">Explore Our Album</button>
+					</div>
+				</div>
+			</section>
+			<!-- Precious Section End -->
+
+			<!-- Our Package Section Start -->
+			<section id="packages" class="container my-5">
+				<div class="card" style="width: 18rem;">
+					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						99+
+						<span class="visually-hidden">unread messages</span>
+					</span>
+					<img src="./media/images/people.png" class="card-img-top img-fluid" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's
+							content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</section>
+			<!-- Our Package Section End -->
+
+			<!-- Accordian Section Start -->
+			<section id="questions" class="container my-5">
+				<div id="frequent-questions" class="row g-2">
+					<div class="container col-md-6 col-12">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Accordion Item #1
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It is shown by
+										default, until the collapse
+										plugin adds the appropriate classes that we use to style each element. These
+										classes control the overall
+										appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with
+										custom CSS or overriding our default variables. It's also worth noting that just
+										about any HTML can go
+										within the <code>.accordion-body</code>, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Accordion Item #2
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by
+										default, until the collapse
+										plugin adds the appropriate classes that we use to style each element. These
+										classes control the overall
+										appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with
+										custom CSS or overriding our default variables. It's also worth noting that just
+										about any HTML can go
+										within the <code>.accordion-body</code>, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false"
+										aria-controls="collapseThree">
+										Accordion Item #3
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It is hidden by
+										default, until the collapse
+										plugin adds the appropriate classes that we use to style each element. These
+										classes control the overall
+										appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with
+										custom CSS or overriding our default variables. It's also worth noting that just
+										about any HTML can go
+										within the <code>.accordion-body</code>, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container col-md-6 col-12">
+						<img src="./media/images/banner.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</section>
+			<!-- Accordian Section End -->
+		</main>
+		<!-- Main Section End -->
+
 		<!-- JS Script -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
@@ -102,3 +251,10 @@
 	</body>
 
 </html>
+
+
+<script>
+	const toastLiveExample = document.getElementById('liveToast')
+	const toast = new bootstrap.Toast(toastLiveExample)
+	toast.show()
+</script>
